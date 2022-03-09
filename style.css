@@ -489,9 +489,6 @@ body {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -585,13 +582,6 @@ body {
   display: table;
   text-align: center;
 }
-
-/* img {
-  border-radius: 75%;
-  width:  200px;
-  height: 200px;
-  object-fit: cover;
-} */
 
 /* FOOTER */
 .footer {
