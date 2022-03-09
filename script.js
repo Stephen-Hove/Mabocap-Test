@@ -197,7 +197,7 @@ const slider = function () {
 }
 slider()
 
-// Modal Window Code
+// Modal Window Code for The Team
 const modalSizwe = document.querySelector('.show_sizwe');
 const modalNdumiso = document.querySelector('.show_ndumiso');
 const modalGreatman = document.querySelector('.show_greatman');
@@ -279,7 +279,181 @@ overlay.addEventListener('click', closeModal3);
 
 document.addEventListener('keydown', function (e) {
 
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal();
+  if (e.key === 'Escape' && !modalGreatman.classList.contains('hidden')) {
+    closeModal3();
+  }
+});
+
+// Modal window code for Services.
+const modala = document.querySelector('.show_a');
+const modalb = document.querySelector('.show_b');
+const modalc = document.querySelector('.show_c');
+const modald = document.querySelector('.show_d');
+const modale = document.querySelector('.show_e');
+const modalf = document.querySelector('.show_f');
+
+const btnCloseModala = document.querySelector('.close_a');
+const btnCloseModalb = document.querySelector('.close_b');
+const btnCloseModalc = document.querySelector('.close_c');
+const btnCloseModald = document.querySelector('.close_d');
+const btnCloseModale = document.querySelector('.close_e');
+const btnCloseModalf = document.querySelector('.close_f');
+
+const btnsViewModala = document.querySelectorAll('.btn--view-a');
+const btnsViewModalb = document.querySelectorAll('.btn--view-b');
+const btnsViewModalc = document.querySelectorAll('.btn--view-c');
+const btnsViewModald = document.querySelectorAll('.btn--view-d');
+const btnsViewModale = document.querySelectorAll('.btn--view-e');
+const btnsViewModalf = document.querySelectorAll('.btn--view-f');
+
+// For Modal a
+const openModala = function () {
+  modala.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModala = function () {
+  modala.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// For Modal b
+const openModalb = function () {
+  modalb.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModalb = function () {
+  modalb.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// For Modal c
+const openModalc = function () {
+  modalc.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModalc = function () {
+  modalc.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// For Modal d
+const openModald = function () {
+  modald.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModald = function () {
+  modald.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// For Modal e
+const openModale = function () {
+  modale.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModale = function () {
+  modale.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// For Modal f
+const openModalf = function () {
+  modalf.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModalf = function () {
+  modalf.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+// Implementing the opening and closing of modals.
+
+// Showing and closing first modal.
+for (let i = 0; i < btnsViewModala.length; i++)
+btnsViewModala[i].addEventListener('click', openModala);
+
+btnCloseModala.addEventListener('click', closeModala);
+overlay.addEventListener('click', closeModala);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modala.classList.contains('hidden')) {
+    closeModala();
+  }
+});
+
+// Showing and closing second modal.
+for (let i = 0; i < btnsViewModalb.length; i++)
+btnsViewModalb[i].addEventListener('click', openModalb);
+
+btnCloseModalb.addEventListener('click', closeModalb);
+overlay.addEventListener('click', closeModalb);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modalb.classList.contains('hidden')) {
+    closeModalb();
+  }
+});
+
+// Showing and closing second modal.
+for (let i = 0; i < btnsViewModalc.length; i++)
+btnsViewModalc[i].addEventListener('click', openModalc);
+
+btnCloseModalc.addEventListener('click', closeModalc);
+overlay.addEventListener('click', closeModalc);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modalc.classList.contains('hidden')) {
+    closeModalc();
+  }
+});
+
+// Showing and closing second modal.
+for (let i = 0; i < btnsViewModald.length; i++)
+btnsViewModald[i].addEventListener('click', openModald);
+
+btnCloseModald.addEventListener('click', closeModald);
+overlay.addEventListener('click', closeModald);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modald.classList.contains('hidden')) {
+    closeModald();
+  }
+});
+
+// Showing and closing second modal.
+for (let i = 0; i < btnsViewModale.length; i++)
+btnsViewModale[i].addEventListener('click', openModale);
+
+btnCloseModale.addEventListener('click', closeModale);
+overlay.addEventListener('click', closeModale);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modale.classList.contains('hidden')) {
+    closeModale();
+  }
+});
+
+// Showing and closing second modal.
+for (let i = 0; i < btnsViewModalf.length; i++)
+btnsViewModalf[i].addEventListener('click', openModalf);
+
+btnCloseModalf.addEventListener('click', closeModalf);
+overlay.addEventListener('click', closeModalf);
+
+document.addEventListener('keydown', function (e) {
+
+  if (e.key === 'Escape' && !modalf.classList.contains('hidden')) {
+    closeModalf();
   }
 });
