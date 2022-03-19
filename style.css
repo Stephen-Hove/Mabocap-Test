@@ -31,6 +31,10 @@ body {
   background-color: #f3f3f3;
 }
 
+h1 {
+  font-size: xx-large;
+}
+
 /* GENERAL ELEMENTS */
 .section {
   padding: 10rem 3rem;
@@ -761,6 +765,8 @@ p{
 
 #div2_1 {
   padding-left: 20px;
+  padding-top: 10px;
+  /* text-align: center; */
 }
 
 #squares3 {
